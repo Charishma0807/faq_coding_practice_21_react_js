@@ -11,7 +11,7 @@ const Faqs = props => {
         <h1 className="heading">FAQS</h1>
         <ul className="faqs-list">
           {faqsList.map(eachFaq => (
-            <FaqItem keys={eachFaq.id} faqDetails={eachFaq} />
+            <FaqItem key={eachFaq.id} faqDetails={eachFaq} />
           ))}
         </ul>
       </div>
